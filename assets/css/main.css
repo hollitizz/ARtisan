@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --text: #061833;
+    --background: #f5f0dd;
+    --primary: #0a254d;
+    --secondary: #08ccd8;
+    --accent: #fb7f25;
+    --success: #81e052;
+    --danger: #ee2b3b;
+    --warning: #f9c753;
+
+    --card-color: #0d0b0f;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+#__nuxt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+    line-height: 1.15;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+html,
+body,
+#__nuxt,
+#__layout {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+
+    text-align: left;
+    color: var(--text);
+    background: var(--background);
+
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    min-width: 100%;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+}

@@ -1,0 +1,34 @@
+{
+    "name": "nuxt-template",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "nuxt dev --port 8080",
+        "build": "nuxt build",
+        "start": "PORT=8080 node .output/server/index.mjs",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare"
+    },
+    "devDependencies": {
+        "@nuxtjs/fontaine": "^0.4.1",
+        "@types/bun": "latest",
+        "autoprefixer": "^10.4.17",
+        "nuxt": "^3.9.3",
+        "postcss": "^8.4.33",
+        "sass": "^1.70.0",
+        "tailwindcss": "^3.4.1",
+        "vue": "^3.4.14",
+        "vue-router": "^4.2.5"
+    },
+    "module": "index.ts",
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pinia/nuxt": "^0.5.1",
+        "floating-vue": "^5.2.1",
+        "pinia": "^2.1.7",
+        "vue-toastification": "^2.0.0-rc.5"
+    }
+}
